@@ -5,6 +5,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.u_name, .u_info{
+  color: #F78536 !important;
+}
 body {
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.6;
@@ -241,7 +244,7 @@ figure {
 
 /* Superfish Override Menu */
 .sf-menu {
-  /*margin: 7px 0 0 0 !important;*/
+  margin: 7px 0 0 0 !important;
 }
 
 .sf-menu {

@@ -157,3 +157,70 @@
 
 
 }());
+
+users = [
+  {
+    "id":"989261ac79654f43f2f9a1943c5d7481",
+    "username":"kooldan",
+    "password":"password",
+    "points":1223,
+    "email":"kooldan@kooldan.io",
+    "t_number":"+79132473271",
+    "name":"Даниил",
+    "surname":"Кулаковский",
+    "birthdate":"01/01/1970"
+  },
+  {
+    "id":"f4cdda55304da439dfce0c799bc3f350",
+    "username":"vasyapupkin",
+    "password":"password1",
+    "points":4,
+    "email":"vasyap@vasyap.ru",
+    "t_number":"+73124993442",
+    "name":"Василий",
+    "surname":"Пупкин",
+    "birthdate":"01/02/1970"
+  },
+  {
+    "id":"6ca3b7570c3242115d87974ab258a28c",
+    "username":"loremi",
+    "password":"password2",
+    "points":113253,
+    "email":"lorem@ipsum.do",
+    "t_number":"+74444444444",
+    "name":"Lorem",
+    "surname":"Ipsum",
+    "birthdate":"02/02/1970"
+  }
+]
+function searchUser(){
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+  for(let i = 0; i < 3; i++){
+    if (users[i].username == username && users[i].password == password) {
+      document.location.href = "https://kooldan.github.io/theiceproject/user.html?user="+users[i].id;
+      return users[i].id;
+    }
+  }
+  return 0;
+}
+let url = new URL(document.location.href);
+let searchParams = new URLSearchParams(url.search.substring(1));
+let id = searchParams.get("user");
+let user;
+
+if(id != null){
+  let foundUser = false;
+  for(let i = 0; i < 3; i++){
+    if (users[i].id == id) {
+      user = users[i];
+      foundUser = true;
+      break;
+    }
+  }
+  if(foundUser){
+    document.getElementById("lka").innerHTML = user.name + " " + user.surname;
+
+    document.getElementById("u_main").innerHTML = "<h2 class='u_name'>" + user.name + " " + user.surname + "</h2> <p class='u_info'>Количество бонусов - "+user.points+"<br>Почтовый ящик - "+user.email+"<br>Номер телефона - "+user.t_number+"<br></p>";
+  }
+}

@@ -67,18 +67,19 @@
 						<ul class="sf-menu" id="fh5co-primary-menu">
 							<li class="active"><a href="index.html">Главная</a></li>
 							<li><a href="#">Рейсы</a></li>
-              <li class="nav-item dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="cabinet.html">Личный кабинет</a>
-                <form class="dropdown-menu ddm p-4" action="login.php" method="get">
+              <li class="nav-item dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Личный кабинет</a>
+                <div class="dropdown-menu ddm p-4">
                   <div class="form-group">
-                    <label for="exampleDropdownFormEmail2">Почтовый ящик</label>
-                    <input type="email" class="form-control" name="email" placeholder="email@example.com">
+                    <label for="exampleDropdownFormEmail2">Логин</label>
+                    <input type="text" class="form-control" id="username" placeholder="Логин">
                   </div>
                   <div class="form-group">
                     <label for="exampleDropdownFormPassword2">Пароль</label>
-                    <input type="password" class="form-control" name="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password" placeholder="Пароль">
                   </div>
-                  <button type="submit" class="btn btn-primary">Войти</button>
-                </form>
+
+                  <button onclick="searchUser()" class="btn btn-primary">Войти</button>
+                </div>
               </li>
               
 						</ul>
@@ -433,6 +434,9 @@
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
+  <script> 
+  
+  </script>
 	</body>
 </html>
 
