@@ -4,8 +4,8 @@ $grid-gutter-width: 40px;
 $border-radius-base:  4px;
 $padding-base-vertical: 14px;
 
-$brand-primary: #F78536;
-$brand-secondary: #00AD7C; 
+$brand-primary: #1ae6da;
+$brand-secondary: #5372e7; 
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -103,15 +103,6 @@ $form-group-margin-bottom: 30px;
 
 
 
-
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
-
-// Template Base
 
 body {
 	font-family: $font-primary;
@@ -245,13 +236,13 @@ figure {
 		right: 0;
 		z-index: 1;
 		
-		background: rgba(255,62,28,0.5);
-		background: -moz-linear-gradient(left, rgba(255,62,28,0.5) 0%,  rgba(255,140,0,.5) 100%);
-		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,62,28,0.5)),  color-stop(100%, rgba(255,140,0,.5)));
-		background: -webkit-linear-gradient(left, rgba(255,62,28,0.5) 0%,  rgba(255,140,0,.5) 100%);
-		background: -o-linear-gradient(left, rgba(255,62,28,0.5) 0%, rgba(255,140,0,.5) 100%);
-		background: -ms-linear-gradient(left, rgba(255,62,28,0.5) 0%, rgba(255,140,0,.5) 100%);
-		background: linear-gradient(to right, rgba(255,62,28,0.5) 0%, rgba(255,140,0,.5) 100%);
+		background:  rgba(53,217,213,0.5);
+		background: -moz-linear-gradient(left, rgba(53,217,213,0.5) 0%,  rgba(102,128,200,.5) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(53,217,213,0.5)),  color-stop(100%, rgba(102,128,200,.5)));
+		background: -webkit-linear-gradient(left, rgba(53,217,213,0.5) 0%,  rgba(102,128,200,.5) 100%);
+		background: -o-linear-gradient(left, rgba(53,217,213,0.5) 0%, rgba(102,128,200,.5) 100%);
+		background: -ms-linear-gradient(left, rgba(53,217,213,0.5) 0%, rgba(102,128,200,.5) 100%);
+		background: linear-gradient(to right, rgba(53,217,213,0.5) 0%, rgba(102,128,200,.5) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3e1c', endColorstr='#ff8c00', GradientType=1 );
 	}
 }
